@@ -42,7 +42,7 @@ extension Profile {
             id: "1",
             name: "Sophie",
             age: 28,
-            bio: "Passionnée de randonnées avec mon fidèle compagnon",
+            bio: "Passionnée de randonnées avec mon fidèle compagnon. On adore explorer!",
             imageURLs: [],
             pet: Pet(
                 id: "p1",
@@ -57,7 +57,7 @@ extension Profile {
             id: "2",
             name: "Lucas",
             age: 32,
-            bio: "Mon chat et moi cherchons des compagnons de jeu",
+            bio: "Mon chat et moi cherchons des compagnons de jeu pour des après-midis fun",
             imageURLs: [],
             pet: Pet(
                 id: "p2",
@@ -67,6 +67,51 @@ extension Profile {
                 age: 2
             ),
             location: Location(latitude: 48.8566, longitude: 2.3522, city: "Paris", distance: 5.0)
+        ),
+        Profile(
+            id: "3",
+            name: "Emma",
+            age: 25,
+            bio: "Amoureuse des animaux, je cherche des amis pour des balades au parc",
+            imageURLs: [],
+            pet: Pet(
+                id: "p3",
+                name: "Charlie",
+                type: .dog,
+                breed: "Beagle",
+                age: 4
+            ),
+            location: Location(latitude: 48.8566, longitude: 2.3522, city: "Paris", distance: 3.0)
+        ),
+        Profile(
+            id: "4",
+            name: "Thomas",
+            age: 30,
+            bio: "Mon lapin et moi adorons rencontrer de nouvelles personnes",
+            imageURLs: [],
+            pet: Pet(
+                id: "p4",
+                name: "Coco",
+                type: .rabbit,
+                breed: "Nain",
+                age: 1
+            ),
+            location: Location(latitude: 48.8566, longitude: 2.3522, city: "Paris", distance: 7.0)
+        ),
+        Profile(
+            id: "5",
+            name: "Marie",
+            age: 27,
+            bio: "Cherche des amis pour partager des moments avec nos animaux",
+            imageURLs: [],
+            pet: Pet(
+                id: "p5",
+                name: "Bella",
+                type: .cat,
+                breed: "Siamois",
+                age: 3
+            ),
+            location: Location(latitude: 48.8566, longitude: 2.3522, city: "Paris", distance: 4.0)
         )
     ]
 }

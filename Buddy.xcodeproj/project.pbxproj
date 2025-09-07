@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -18,6 +18,7 @@
 		409B98078D5AF866B9CB9DBC /* SwipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB877A45FC42E04EF48D057 /* SwipeCardView.swift */; };
 		4189BE89A2802F74EDF7E99D /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5DE8BCE1D7D41B2A126DB96 /* DIContainer.swift */; };
 		42CE00F715104573E941EFB5 /* BuddyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F34F47FBC5CFBEC7BDCE065 /* BuddyApp.swift */; };
+		4A6512492D866A0CB623877F /* SwipeAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FC31F8F3D13D34D33686261 /* SwipeAction.swift */; };
 		50EB7E47F9813F67D17A5BD5 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DC6DF1D612619B6448D6349 /* Coordinator.swift */; };
 		52B1799E959B3E96A5499E76 /* ViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87166F98734BFECFA7BD6818 /* ViewModelProtocol.swift */; };
 		82CC412356978265BD290B4D /* ActionButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110A3D07AB296CAC84945659 /* ActionButtons.swift */; };
@@ -52,8 +53,9 @@
 		70D1BEEFE897725E58B2B2F2 /* MatchingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingScreen.swift; sourceTree = "<group>"; };
 		72E6D651F8E34C3A53A44DB9 /* ToastManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastManager.swift; sourceTree = "<group>"; };
 		87166F98734BFECFA7BD6818 /* ViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelProtocol.swift; sourceTree = "<group>"; };
-		8BE6426EC12149C808484799 /* Buddy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Buddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BE6426EC12149C808484799 /* Buddy.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Buddy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F4831E481D80C258F7094A9 /* ModeToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeToggle.swift; sourceTree = "<group>"; };
+		8FC31F8F3D13D34D33686261 /* SwipeAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeAction.swift; sourceTree = "<group>"; };
 		93907380D3F77BEB81F68F80 /* MessagesListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesListScreen.swift; sourceTree = "<group>"; };
 		987FF838137F2701B7974FFC /* WalksScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalksScreen.swift; sourceTree = "<group>"; };
 		9F34F47FBC5CFBEC7BDCE065 /* BuddyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuddyApp.swift; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 			path = Features;
 			sourceTree = "<group>";
 		};
+		1A0CCC7B6CE11BD1DA3D2768 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8FC31F8F3D13D34D33686261 /* SwipeAction.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		20A29BE9A6BA4946F4D47005 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,6 +121,7 @@
 		303AF350340283F133DB9737 /* Matching */ = {
 			isa = PBXGroup;
 			children = (
+				1A0CCC7B6CE11BD1DA3D2768 /* Models */,
 				02EE901AFA0B3E6CD42E176E /* Repository */,
 				20A29BE9A6BA4946F4D47005 /* ViewModels */,
 				F595B73D5F2F4814D3B7C55F /* Views */,
@@ -432,6 +443,7 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					92D6CBD1E5E238F32E5109CD = {
+						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -446,6 +458,7 @@
 			);
 			mainGroup = C6637391C400BE2360AA0BD5;
 			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 54;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -479,6 +492,7 @@
 				A36A2DF8102A1BDB293E36F1 /* Pet.swift in Sources */,
 				BEC18969E8C3937214FB3540 /* Profile.swift in Sources */,
 				0F9782CD5911E147F411116B /* ProfileScreen.swift in Sources */,
+				4A6512492D866A0CB623877F /* SwipeAction.swift in Sources */,
 				409B98078D5AF866B9CB9DBC /* SwipeCardView.swift in Sources */,
 				AE39D85636117190927F6B83 /* Theme.swift in Sources */,
 				8774E32FB819997364B2BE2D /* ToastManager.swift in Sources */,
@@ -498,7 +512,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UVC4JM6XD4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Buddy/App/Info.plist;
@@ -649,7 +662,6 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = UVC4JM6XD4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = Buddy/App/Info.plist;
