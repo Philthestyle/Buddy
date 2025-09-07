@@ -15,11 +15,16 @@ final class ToastManager: ObservableObject {
         }
     }
     
-    struct Toast: Identifiable {
+    struct Toast: Identifiable, Equatable {
         let id = UUID()
         let message: String
         let style: ToastStyle
         let duration: TimeInterval
+        
+        // Conformance à Equatable
+        static func == (lhs: Toast, rhs: Toast) -> Bool {
+            lhs.id == rhs.id
+        }
     }
     
     @Published var toasts: [Toast] = []

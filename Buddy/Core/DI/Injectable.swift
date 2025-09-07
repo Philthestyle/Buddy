@@ -2,14 +2,16 @@ import Foundation
 
 @propertyWrapper
 struct Inject<T> {
-    private var service: T
+    private let service: T
     
     init() {
-        self.service = AppAssembly.shared.resolve(T.self)
+        // Solution 1: Force l'accès synchrone au MainActor
+        self.service = MainActor.assumeIsolated {
+            AppAssembly.shared.resolve(T.self)
+        }
     }
     
     var wrappedValue: T {
         get { service }
-        mutating set { service = newValue }
     }
 }
